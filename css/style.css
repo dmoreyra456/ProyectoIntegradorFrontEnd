@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #89F5EE;
+}
+
+.navFont{
+    font-family: "germania one", cursive;
+    display: flex;
+    justify-content:left;
+    flex-direction: column;
+}
+.fotoAlfredo{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    flex-direction: column;
+}
+.fotoAlfredo img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 30%;
+    height: auto;
+    margin: 0;
+}
+
+.navFont    {
+    display: flex;
+    flex-direction:column;
+    align-items: end;
+}
+.objetivosProfesionales{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 6.25rem;
+    background-color: aliceblue;
+    border-radius: 3.125rem;
+}
+.experienciaLaboral{
+    margin: 6.25rem;
+    background-color: aliceblue;
+    border-radius: 3.125rem;
+    padding: 3.125rem;
+}
+.formacionAcademica{
+    margin: 6.25rem;
+    background-color: aliceblue;
+    border-radius: 3.125rem;
+    padding: 3.125rem;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: row ;
+    flex-wrap:wrap;
+    align-content:center;
+    
+}
+#botones{
+    border-radius: .625rem;
+    padding: 1rem;
+    display:list-item;
+    font-size: .625rem;
+}
+
+#idiomas{
+    margin: 6.25rem;
+    background-color: aliceblue;
+    border-radius: 3.125rem;
+    padding: 3.125rem;
+}
+#informatica{
+    margin: 6.25rem;
+    background-color: aliceblue;
+    border-radius: 3.125rem;
+    padding: 3.125rem;
+}
