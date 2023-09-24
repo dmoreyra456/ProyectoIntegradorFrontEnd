@@ -5,11 +5,32 @@
 }
 
 body{
-    background-color: #89F5EE;
+    background-color: #0093E9;
+    background-image: linear-gradient(119deg, #0093E9 0%, #d08081 99%);
+    font-family: "germania one", cursive;    
 }
-
+#cuadrado{
+        width: 6.25rem;
+        height: 6.25rem;
+        text-align: center;
+        text-wrap: 6.25rem;
+        background-color: blue;
+        animation-name: cuadradoloco;
+        position: relative;
+        animation-duration: 5s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction:initial;
+        animation-delay: 2s;
+}
+@keyframes cuadradoloco {
+    0% {background-color: blue; right: 100px;}
+    25% {background-color: green; left: 300px; top: 0rem;}
+    50% {background-color: yellow; left:400px; top: 0rem;}
+    75% {background-color: aliceblue; left: 31.25rem;}
+    100% {background-color: blue; left: 43.75rem;}
+}
 .navFont{
-    font-family: "germania one", cursive;
     display: flex;
     justify-content:left;
     flex-direction: column;
@@ -18,6 +39,10 @@ body{
     display: flex;
     justify-content:center;
     text-align: center;
+    flex-direction:row;
+}
+.textoCentral{
+    display: flex;
     flex-direction: column;
 }
 .fotoAlfredo img{
@@ -28,11 +53,11 @@ body{
     height: auto;
     margin: 0;
 }
-
-.navFont    {
+.navFont {
     display: flex;
-    flex-direction:column;
-    align-items: end;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
 }
 .objetivosProfesionales{
     display: flex;
@@ -42,7 +67,8 @@ body{
     flex-direction: column;
     margin: 6.25rem;
     background-color: aliceblue;
-    border-radius: 3.125rem;
+    border: 3.125rem 3.125rem;
+    border-radius: 6.25rem;
 }
 .experienciaLaboral{
     margin: 6.25rem;
@@ -65,10 +91,14 @@ main{
     
 }
 #botones{
-    border-radius: .625rem;
-    padding: 1rem;
-    display:list-item;
-    font-size: .625rem;
+    font-size: 1.875rem;
+    list-style: none;
+    text-decoration:none;
+    color: black;
+    text-shadow: #d08081;
+}
+#botones :hover{
+    background-color: black;
 }
 
 #idiomas{
@@ -82,4 +112,44 @@ main{
     background-color: aliceblue;
     border-radius: 3.125rem;
     padding: 3.125rem;
+}
+@media (min-width: 425px) {
+	.fotoAlfredo img {
+		border-radius: 50%;
+		width: 10%;
+		height: 10%;
+	}
+}
+
+@media (min-width: 768px) {
+	.fotoAlfredo img {
+		border-radius: 20%;
+		width: 20%;
+		height: 20%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.fotoAlfredo  img {
+		border-radius: 5%;
+		width: 50%;
+		height: 50%;
+	}
+}
+.navFont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .navFont {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navFont h4 {
+        margin-bottom: 10px;
+    }
 }

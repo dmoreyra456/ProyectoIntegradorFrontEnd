@@ -11,3 +11,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>dale</button>
